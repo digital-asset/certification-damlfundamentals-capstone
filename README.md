@@ -43,7 +43,7 @@ Proposer can create a ProjectProposal contract. Evaluator can exercise ProposerA
 
 ### II. Workflow
   1. proposer creates a ProjectProposal contract     
-  2. evaluator exercises ProposerAccomplishments to check proposer's past accomplishments and confrim if proposer is ready to take on a new responsibility
+  2. evaluator exercises ProposerAccomplishments to check proposer's past accomplishments and confirm if proposer is ready to take on a new responsibility
   3. evaluator exercises Reject with a feedback: "Aim to finish it by the end of March"
   4. proposer exercises Revise with an updated endDate (March 25, 2023)
   5. evaluator exercises Approve - a Project contract is created
