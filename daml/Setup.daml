@@ -37,8 +37,6 @@ setupUsers = script do
             evaluator
             note = "Third proposal"   
 
-    return ()
-
 
 data TestProjectInfos = TestProjectInfos with
     projInfo1: ProjectInfo
