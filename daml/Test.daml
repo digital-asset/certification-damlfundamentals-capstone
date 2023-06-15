@@ -24,7 +24,7 @@ import Daml.Script
         - cantCreateAccomplishment: proposer cannot create an Accomplishment contract out of a Project contract without evaluator's approval/authority
 -}
 
--- + testCreateProjectProposal: proposer can create ProjectProposal contracts & evaluator can exercise can check "ProposerAccomplishments" to either "Reject" or "Approve"
+-- + testCreateProjectProposal: proposer can create ProjectProposal contracts & evaluator can exercise "ProposerAccomplishments" to either "Reject" or "Approve"
 testCreateProjectProposal = script do
     (testParties@TestParties{..}, testProjectInfos@TestProjectInfos{..}, proj1Accomplished, proj2Accomplished) <- setupAccomplishments
     -- 1. proposer creates a ProjectProposal contract
@@ -44,6 +44,8 @@ testProjectProposal = script do
     checkProposerAcc <- submit evaluator do
         exerciseCmd proposal3 ProposerAccomplishments with
             accomplishments = proposerAccs
+    -- debug checkProposerAcc
+    
     -- 3. evaluator exercise Reject with a feedback: "Aim to finish it by the end of March"
     rejectedProposal <- submit evaluator do
         exerciseCmd proposal3 Reject with

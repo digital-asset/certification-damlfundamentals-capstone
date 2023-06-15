@@ -29,6 +29,8 @@ As part of the certification process, you will be required to complete a backend
 
 4. **Annotate your code** to highlight key functionalities and provide clear context.
 
+5. Maximize your score by fully integrating all rubric components into the application workflow. Failure to incorporate defined items, such as records and typeclasses, into the business logic will result in point deductions.
+
 To assist with your capstone project preparation, we provide a sample app as a guide. Analyze its code structure, functionality, and test script as you work towards your certification. Happy coding!
 
 ---
