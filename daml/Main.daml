@@ -68,14 +68,15 @@ template ProjectProposal
             do
                 if null accomplishments then return ["N/A"]
                 else do
-                    -- 1. forA ver.
-                    forA accomplishments (\acc -> do
-                        let 
-                            accDetails = acc._2.project.projectInfo.title <> " : " <> acc._2.project.projectInfo.details
-                        trace(accDetails)(return accDetails))
+                    -- 1. map ver.
+                    return $ map (\acc -> acc._2.project.projectInfo.title <> " : " <> acc._2.project.projectInfo.details) accomplishments
+                    
+                    -- 2. forA ver. (Avoid using "trace" in production code as it is not recommended.)
+                    -- forA accomplishments (\acc -> do
+                    --     let 
+                    --         accDetails = acc._2.project.projectInfo.title <> " : " <> acc._2.project.projectInfo.details
+                    --     trace(accDetails)(return accDetails))
 
-                    -- 2. map ver.
-                    -- return $ map (\acc -> acc._2.project.projectInfo.title <> " : " <> acc._2.project.projectInfo.details) accomplishments
 
         -- evaluator can Reject the proposer with feedback
         choice Reject: ProjectProposalId
