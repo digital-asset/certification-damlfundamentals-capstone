@@ -21,14 +21,15 @@ As part of the certification process, you will be required to complete a backend
 ![rubric](./rubric.png)
 
 🚨 **IMPORTANT NOTE** 🚨
-+ **If the `daml start` command results in errors or prevents compilation, the capstone project will auto-fail and will not be evaluated.**
-+ **The evaluation of your project requires a README that adheres to the format provided in the README of the sample project below.**
+1. Ensure that the **`$ daml start` command executes without errors. In the event of errors during the compilation process, the capstone project will not be evaluated.**
 
-+ Your README should document the purpose and functionalities of the project, as well as any important details about how it works. The README file should also include instructions on how to run the project, how to run the tests, and any dependencies required to do so. This documentation will help others understand your project and how to use it, and will also demonstrate your ability to clearly communicate about your work.
+2. Follow the format of the sample project's README to create **a unique README tailored to your project.** Include your project's purpose, functionalities, implementation details, compilation instructions, test running instructions, and dependencies.
 
-To help you prepare for your capstone project, we provide this sample app as a guide for the kind of app you should aim to build. The sample app has been designed to showcase the key concepts and skills that you will need to apply in your own project.
+3. Commit and push your original work to your repository, **avoiding forking or cloning Digital Asset's sample project.** This prevents Digital Asset staff members from appearing as collaborators on your repository.
 
-We recommend that you examine this app closely, paying attention to the code structure, functionality, and the test script. We believe that this sample app will be an invaluable resource for you as you work towards your certification. Happy coding!
+4. **Annotate your code** to highlight key functionalities and provide clear context.
+
+To assist with your capstone project preparation, we provide a sample app as a guide. Analyze its code structure, functionality, and test script as you work towards your certification. Happy coding!
 
 ---
 
