@@ -54,12 +54,6 @@ template ProjectProposal
 
         ensure (projectInfo.startDate < projectInfo.endDate) -- endDate has to be later than startDate
 
-        -- simply returns the ContractId of the current contract without archiving anything; can be used as a reminder if the proposal doesn't get either Approved or Rejected for a while
-        nonconsuming choice Propose: ProjectProposalId
-            controller proposer
-            do
-                return self
-
         -- evaluator can check the list of accomplishments of the proposer to see if this proposer is qualified/ready take on a new project
         nonconsuming choice ProposerAccomplishments: ([Text])
             with
